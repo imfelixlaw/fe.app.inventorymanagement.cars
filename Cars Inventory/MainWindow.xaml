@@ -1,0 +1,29 @@
+﻿<Window x:Class="Cars_Inventory.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Inventory" Height="213" Width="525" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Menu Height="23" HorizontalAlignment="Left" Name="menu1" VerticalAlignment="Top" Width="491">
+            <MenuItem Header="_File" Name="menuItemFile">
+                <MenuItem Header="E_xit" Name="menuItemExit" Click="menuItemExit_Click" />
+            </MenuItem>
+            <MenuItem Header="_Setting" Name="menuItemSetting">
+                <MenuItem Header="_Product Group" Name="menuItemProductGroup" Click="MenuItemProductGroup_Click" />
+            </MenuItem>
+            <MenuItem Header="_Item List" >
+                <MenuItem Header="Item List By _Item" Name="menuItemItemListByItem" Click="menuItemItemListByItem_Click" />
+                <MenuItem Visibility="Hidden" Header="Item List By _Centre" Name="menuItemItemListByCentre" />
+            </MenuItem>
+            <MenuItem Header="Item _Stock In" Name="menuItemItemStockIn" Click="menuItemItemStockIn_Click" />
+            <MenuItem Header="Report">
+                <MenuItem Header="Stock Take Report" Name="menuItemRptStockTake" Click="buttonRptStockTake_Click"/>
+                <MenuItem Header="Stock Ordering Report" Name="menuItemRptStockOrder" Click="buttonRptStockOrdering_Click"/>
+            </MenuItem>
+        </Menu>
+        <Button Content="Setting Product Group" Height="23" HorizontalAlignment="Left" Margin="18,84,0,0" Name="buttonSettingProductGroup" VerticalAlignment="Top" Width="151" Click="buttonSettingProductGroup_Click" />
+        <Button Content="View Item List" Height="23" HorizontalAlignment="Left" Margin="175,84,0,0" Name="buttonViewItemList" VerticalAlignment="Top" Width="151" Click="buttonViewItemList_Click" />
+        <Button Content="Add Stock In" Height="23" HorizontalAlignment="Left" Margin="330,84,0,0" Name="buttonAddStockIn" VerticalAlignment="Top" Width="151" Click="buttonAddStockIn_Click" />
+        <Button Content="Stock Take Report" Height="23" HorizontalAlignment="Left" Margin="18,129,0,0" Name="buttonRptStockTake" VerticalAlignment="Top" Width="151" Click="buttonRptStockTake_Click" />
+        <Button Content="Stock Ordering Report" Height="23" HorizontalAlignment="Left" Margin="175,129,0,0" Name="buttonRptStockOrdering" VerticalAlignment="Top" Width="151" Click="buttonRptStockOrdering_Click" />
+    </Grid>
+</Window>
